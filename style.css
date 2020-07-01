@@ -1,0 +1,101 @@
+
+
+/* Element */
+body{
+	background-color: 	#C1E5AD;
+	background-size: 	cover;	
+}
+header{
+	color:#BD1659;
+	font:Algerian;
+	font-size: 	200%;	 	
+}
+
+
+h1{
+	color: #872F47;
+	text-align: center;
+	cursor: pointer;
+	border: 5px solid rgba(189, 22, 89,0.15);
+	text-align:center;
+
+}
+
+h1:hover {
+	color: #872D87;
+	text-align: center;
+	cursor: pointer;
+	border: 5px solid rgba(189, 22, 89,0.15);
+	text-align:center;
+}
+
+div{
+	text-align: center;	
+}
+p{
+	font-family: 'Nova Square', cursive;
+	color:#656563;
+	font-size: 140%;	
+}
+
+.img1{
+	float: 	left;	
+}
+
+/* Classes */
+.col{
+		color: 	red;
+}
+.col1{
+	color: 	brown;
+}
+.boxmodel{
+	display: 	inline-grid;	
+	padding: 	5px 15px 5px 15px;
+	margin: 	0.5px 1px 0.5px 1px;
+	text-align: 	right;	
+	border: 	2px solid	green;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  
+  list-style: none;
+  margin: 0; 
+  background: #424d3d;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: #538722;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
